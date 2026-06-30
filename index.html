@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Multimedia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="mainHeader">
+    <h1 id="pageTitle">Mi Página Multimedia</h1>
+    <p id="pageDescription">Sube tus imágenes y videos favoritos.</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Editar página</h2>
+      <input type="text" id="titleInput" placeholder="Nuevo título">
+      <textarea id="descriptionInput" placeholder="Nueva descripción"></textarea>
+      <label>Color del encabezado:</label>
+      <input type="color" id="headerColor" value="#1e88e5">
+      <label>Color de fondo:</label>
+      <input type="color" id="bodyColor" value="#f2f2f2">
+      <button onclick="guardarCambios()">Guardar cambios</button>
+    </section>
+
+    <section class="panel">
+      <h2>Subir imágenes y videos</h2>
+      <input type="file" id="fileInput" accept="image/*,video/*" multiple>
+      <button onclick="subirArchivos()">Subir archivos</button>
+    </section>
+
+    <section>
+      <h2>Galería</h2>
+      <div class="gallery" id="gallery"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado con HTML, CSS y JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
